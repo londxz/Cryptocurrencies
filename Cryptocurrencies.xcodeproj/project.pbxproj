@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C726BFF2DB3968B002DAAE7 /* CoinAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C726BFE2DB3968B002DAAE7 /* CoinAPIError.swift */; };
 		3C78940A2DB2993500AB0418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7894082DB2993500AB0418 /* Assets.xcassets */; };
 		3C78940B2DB2993500AB0418 /* CryptocurrenciesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7893FF2DB2993500AB0418 /* CryptocurrenciesApp.swift */; };
 		3C78940C2DB2993500AB0418 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7894022DB2993500AB0418 /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		3C5A3DBD2DB2560900548009 /* Cryptocurrencies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptocurrencies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C726BFE2DB3968B002DAAE7 /* CoinAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinAPIError.swift; sourceTree = "<group>"; };
 		3C7893FF2DB2993500AB0418 /* CryptocurrenciesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptocurrenciesApp.swift; sourceTree = "<group>"; };
 		3C7894022DB2993500AB0418 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C7894042DB2993500AB0418 /* CoinsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsViewModel.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				3C7894112DB2A36900AB0418 /* CoinModel.swift */,
+				3C726BFE2DB3968B002DAAE7 /* CoinAPIError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C726BFF2DB3968B002DAAE7 /* CoinAPIError.swift in Sources */,
 				3C7894122DB2A36900AB0418 /* CoinModel.swift in Sources */,
 				3C7894102DB2997900AB0418 /* CoinDataService.swift in Sources */,
 				3C78940B2DB2993500AB0418 /* CryptocurrenciesApp.swift in Sources */,
