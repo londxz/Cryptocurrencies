@@ -9,12 +9,16 @@ import Foundation
 
 struct CoinModel: Codable, Identifiable {
     let id: String
+    let symbol: String
     let name: String
-    let price: Double
+    let currentPrice: Double
+    let marketCapRank: Int
     
     enum CodingKeys: String, CodingKey {
         case id
+        case symbol
         case name
-        case price = "current_price"
+        case currentPrice = "current_price"
+        case marketCapRank = "market_cap_rank"
     }
 }
