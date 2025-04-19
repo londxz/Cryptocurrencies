@@ -10,13 +10,19 @@ import Foundation
 class CoinsViewModel: ObservableObject {
     
     @Published var coins = [CoinModel]()
+    @Published var errorMessage: String?
     
     private let service = CoinDataService()
     
     init() {
-        service.fetchCoins { coins in
+        service.fetchCoinsWithResult { result in
             DispatchQueue.main.async {
-                self.coins = coins
+                switch result {
+                case .success(let coins):
+                    self.coins = coins
+                case .failure(let error):
+                    self.errorMessage = error.localizedDescription
+                }
             }
         }
     }
