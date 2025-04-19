@@ -13,6 +13,9 @@ struct CoinModel: Codable, Identifiable {
     let name: String
     let currentPrice: Double
     let marketCapRank: Int
+    let image: String
+    let high: Double
+    let low: Double
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -20,5 +23,8 @@ struct CoinModel: Codable, Identifiable {
         case name
         case currentPrice = "current_price"
         case marketCapRank = "market_cap_rank"
+        case image
+        case high = "high_24h"
+        case low = "low_24h"
     }
 }

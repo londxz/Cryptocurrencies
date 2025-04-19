@@ -9,7 +9,7 @@ import Foundation
 
 class CoinDataService {
     func fetchCoins() async throws -> [CoinModel] {
-        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=20"
+        let urlString = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=100"
     
         guard let url = URL(string: urlString) else {
             throw CoinAPIError.requestFailed(description: "Invalid URL")
